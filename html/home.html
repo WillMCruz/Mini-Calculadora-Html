@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <!--Carregando o Favicon-->
+    <link rel="icon" type="image/jpg" href="../images/Calculadora.jpg"/>
+    <title>Calculadora</title>
+    <!--Carregando a Fonte do Google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <!--Carregando o Nosso CSS-->
+    <link rel="stylesheet" href="../css/my.css"/>
+</head>    
+    <body>
+        <div id="calculadora" class="calculadora">
+            <h3 id="htitulo" class="htitulo">Calculadora Fatec</h3>
+            <input type="text" class="resultado" id="resultado"  disabled/>
+            <div id="abutton" class="abutton">
+                <button id="one" class="one" onclick="calcula('1')">1</button>
+                <button id="two" class="two" onclick="calcula('2')">2</button>
+                <button id="three" class="three" onclick="calcula('3')">3</button>
+                <button id="multiply" class="multiply" onclick="calcula('*')">*</button>
+                <button id="clear" class="clear" onclick="limpar()">C</button>
+                <button id="four" class="four" onclick="calcula('4')">4</button>
+                <button id="five" class="five" onclick="calcula('5')">5</button>
+                <button id="six" class="six" onclick="calcula('6')">6</button>
+                <button id="share" class="share" onclick="calcula('/')">/</button>
+                <button id="delete" class="delete" onclick="apagar()">&larr;</button>
+                <button id="seven" class="seven" onclick="calcula('7')">7</button>
+                <button id="eight" class="eight" onclick="calcula('8')">8</button>
+                <button id="nine" class="nine" onclick="calcula('9')">9</button>
+                <button id="sum" class="sum" onclick="calcula('+')">+</button>
+                <button id="equal" class="equal" onclick="resultadofinal()">=</button>
+                <button id="zero" class="zero" onclick="calcula('0')">0</button>
+                <button id="dot" class="dot" onclick="calcula('.')">.</button>
+                <button id="zerozero" class="zerozero" onclick="calcula('00')">00</button>
+                <button id="subtract" class="subtract" onclick="calcula('-')">-</button>
+            </div>
+        </div>
+    </body>
+    <script src="../js/script.js"></script>
+</html>
